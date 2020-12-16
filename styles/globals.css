@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +13,31 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.animation-slow {
+  animation: spin 5s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.item-list:hover h3 {
+  @apply dark:text-cyan-400;
+}
+
+body {
+  @apply overflow-x-hidden;
 }
