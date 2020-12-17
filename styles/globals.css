@@ -41,3 +41,13 @@ a {
 body {
   @apply overflow-x-hidden;
 }
+.toggle_3_dot {
+  /* top: -0.1rem; */
+  left: -0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .toggle_3_dot {
+  transform: translateX(60%);
+  @apply bg-cyan-400;
+}
