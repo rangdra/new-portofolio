@@ -9,7 +9,7 @@ const Hero = () => {
         </span>
       </h1>
       <div className="lg:w-3/4 w-full flex justify-center lg:mb-0 mb-6">
-        <img className="w-72 h-72 rounded-full" src="/emoji.PNG" alt="" />
+        <img className="w-72 h-72 rounded-full" src="/emoji.png" alt="" />
       </div>
     </div>
   );
