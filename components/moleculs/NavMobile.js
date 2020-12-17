@@ -30,7 +30,7 @@ const NavMobile = ({ isOpen, setIsOpen, router, colorTheme, setTheme }) => {
           <Link href={nav.href}>
             <a
               className={`${
-                "/" === path
+                nav.href === path
                   ? "text-white dark:text-cyan-400 underline"
                   : "text-gray-800 dark:text-white"
               } font-medium text-lg hover:underline hover:opacity-50 tracking-widest uppercase`}
