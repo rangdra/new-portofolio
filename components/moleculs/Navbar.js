@@ -22,7 +22,7 @@ const Navbar = ({ router }) => {
       </a> */}
       <Link href="/">
         <a>
-          <Image src="/emoji.png" width={70} height={70} />
+          <Image src="/emoji.png" width={50} height={50} />
         </a>
       </Link>
 
