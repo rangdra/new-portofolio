@@ -43,8 +43,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between mt-4">
             <span className="text-sm text-gray-500 dark:text-gray-300 lg:mt-0 mt-2">
-              &copy; 2020 Rangdra Pangestu. All Rights Reserved. Web inspired by
-              jeffjadulco.com
+              &copy; 2020 Rangdra Pangestu. All Rights Reserved.
             </span>
             <div className="flex">
               <a href="#" className="mr-4">

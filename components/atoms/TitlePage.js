@@ -1,5 +1,3 @@
-import React from "react";
-
 const TitlePage = ({ title, subtitle, className }) => {
   return (
     <div className={`${className && className}`}>

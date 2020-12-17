@@ -1,15 +1,13 @@
-import React from "react";
 import Navbar from "../components/moleculs/Navbar";
 import Footer from "../components/moleculs/Footer";
 import CardProject from "../components/atoms/CardProject";
 import TitlePage from "../components/atoms/TitlePage";
 import { listCardProjects } from "../utils/data";
-import PageTitle from "../components/atoms/PageTitle";
+import Layout from "../components/Layout";
 
-const projects = () => {
+const Projects = () => {
   return (
-    <>
-      <PageTitle title="Projects" />
+    <Layout title="Projects">
       <div className="dark:bg-gray-800">
         <Navbar />
         <div className="container mx-auto px-5">
@@ -64,8 +62,8 @@ const projects = () => {
 
         <Footer />
       </div>
-    </>
+    </Layout>
   );
 };
 
-export default projects;
+export default Projects;

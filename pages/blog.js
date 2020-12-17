@@ -1,15 +1,13 @@
-import React from "react";
 import Navbar from "../components/moleculs/Navbar";
 import Footer from "../components/moleculs/Footer";
 import ItemList from "../components/atoms/ItemList";
 import TitlePage from "../components/atoms/TitlePage";
 import { listBlogs } from "../utils/data";
-import PageTitle from "../components/atoms/PageTitle";
+import Layout from "../components/Layout";
 
-const blog = () => {
+const Blog = () => {
   return (
-    <>
-      <PageTitle title="Blog" />
+    <Layout title="Blog">
       <div className="dark:bg-gray-800">
         <Navbar />
         <div className="container mx-auto px-5">
@@ -25,8 +23,8 @@ const blog = () => {
 
         <Footer />
       </div>
-    </>
+    </Layout>
   );
 };
 
-export default blog;
+export default Blog;

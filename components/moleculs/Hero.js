@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <div className="container mx-auto px-5 mt-12 lg:mt-28 flex justify-between items-center flex-col-reverse lg:flex-row">

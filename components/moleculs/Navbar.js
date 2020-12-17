@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { withRouter } from "next/router";
 import useMode from "../../hooks/useMode";
 import NavMobile from "./NavMobile";
+import { navLink } from "../../utils/data";
 
 const Navbar = ({ router }) => {
   const path = router.pathname;
@@ -33,43 +34,17 @@ const Navbar = ({ router }) => {
       />
       <div className="lg:flex w-full ml-12 items-center justify-between z-10 hidden">
         <div className="">
-          <Link href="/">
-            <a
-              className={`${
-                "/" === path ? "text-cyan-500 dark:text-cyan-400" : ""
-              } mr-6 font-medium text-gray-600 text-lg hover:underline hover:opacity-50 dark:text-white`}
-            >
-              Home
-            </a>
-          </Link>
-
-          <Link href="/blog">
-            <a
-              className={`${
-                "/blog" === path ? "text-cyan-500 dark:text-cyan-400" : ""
-              } mr-6 font-medium text-gray-600 text-lg hover:underline hover:opacity-50 dark:text-white`}
-            >
-              Blog
-            </a>
-          </Link>
-          <Link href="/projects">
-            <a
-              className={`${
-                "/projects" === path ? "text-cyan-500 dark:text-cyan-400" : ""
-              } mr-6 font-medium text-gray-600 text-lg hover:underline hover:opacity-50 dark:text-white`}
-            >
-              Projects
-            </a>
-          </Link>
-          <Link href="/about">
-            <a
-              className={`${
-                "/about" === path ? "text-cyan-500 dark:text-cyan-400" : ""
-              } mr-6 font-medium text-gray-600 text-lg hover:underline hover:opacity-50 dark:text-white`}
-            >
-              About
-            </a>
-          </Link>
+          {navLink.map((nav) => (
+            <Link href={nav.href}>
+              <a
+                className={`${
+                  nav.href === path ? "text-cyan-500 dark:text-cyan-400" : ""
+                } mr-6 font-medium text-gray-600 text-lg hover:underline hover:opacity-50 dark:text-white`}
+              >
+                {nav.title}
+              </a>
+            </Link>
+          ))}
         </div>
         <div
           className="cursor-pointer lg:flex hidden p-2 rounded-full bg-cyan-500 shadow-md dark:bg-gray-900"

@@ -1,15 +1,13 @@
-import React from "react";
 import BlogItem from "../components/moleculs/BlogItem";
 import Footer from "../components/moleculs/Footer";
 import Hero from "../components/moleculs/Hero";
 import Navbar from "../components/moleculs/Navbar";
 import ProjectItem from "../components/moleculs/ProjectItem";
-import PageTitle from "../components/atoms/PageTitle";
+import Layout from "../components/Layout";
 
 const Home = () => {
   return (
-    <>
-      <PageTitle title="Home" />
+    <Layout title="Home">
       <div className="dark:bg-gray-800">
         <Navbar />
         <Hero />
@@ -17,7 +15,7 @@ const Home = () => {
         <ProjectItem />
         <Footer />
       </div>
-    </>
+    </Layout>
   );
 };
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ItemList = ({ post }) => {
   return (
     <div className="item-list w-full mb-4 border-b border-gray-200 dark:border-gray-600 hover:bg-cyan-100 hover:border-cyan-100 cursor-pointer dark:hover:bg-gray-900 dark:hover:border-gray-900 hover:rounded-lg lg:px-4 pt-2">

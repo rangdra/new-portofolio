@@ -97,3 +97,22 @@ export const listCardProjects = [
     linkCode: "https://github.com/rangdra/movie-app",
   },
 ];
+
+export const navLink = [
+  {
+    href: "/",
+    title: "Home",
+  },
+  {
+    href: "/blog",
+    title: "Blog",
+  },
+  {
+    href: "/projects",
+    title: "Projects",
+  },
+  {
+    href: "/about",
+    title: "About",
+  },
+];

@@ -1,4 +1,3 @@
-import React from "react";
 import ItemList from "../atoms/ItemList";
 import { listProjects } from "../../utils/data";
 

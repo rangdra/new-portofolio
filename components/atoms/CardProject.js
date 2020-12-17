@@ -1,8 +1,10 @@
-import Link from "next/link";
-
 const CardProject = ({ project }) => {
   return (
-    <div className="card  bg-gray-100 dark:bg-gray-900 py-5 px-6 rounded-lg animate-pulse">
+    <div className="card  bg-gray-100 dark:bg-gray-900 py-5 px-6 rounded-lg relative">
+      <span class="flex h-3 w-3 absolute -top-1 -right-1">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-400 dark:bg-gray-200 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-gray-500 dark:bg-white"></span>
+      </span>
       <div className="flex justify-between items-center">
         <h1 className="text-gray-800 dark:text-white text-3xl font-semibold">
           {project.title}
@@ -18,9 +20,9 @@ const CardProject = ({ project }) => {
         <a
           href={project.linkWeb}
           target="_blank"
-          className="flex items-center mr-4  "
+          className="flex items-center mr-4 "
         >
-          <p className="text-gray-700 dark:hover:text-white   dark:text-gray-400 text-lg font-medium mr-1">
+          <p className="text-gray-700 dark:text-gray-400 text-lg font-medium mr-1 hover:text-opacity-50 hover:underline">
             Web
           </p>
           <svg
@@ -37,7 +39,7 @@ const CardProject = ({ project }) => {
           </svg>
         </a>
         <a href={project.linkCode} className="flex items-center">
-          <p className="text-gray-700 dark:text-gray-400 text-lg font-medium mr-1 dark:hover:text-white ">
+          <p className="text-gray-700 dark:text-gray-400 text-lg font-medium mr-1 hover:text-opacity-50 hover:underline">
             Code
           </p>
           <svg

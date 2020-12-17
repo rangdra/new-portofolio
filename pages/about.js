@@ -1,12 +1,10 @@
-import React from "react";
 import Navbar from "../components/moleculs/Navbar";
 import Footer from "../components/moleculs/Footer";
-import PageTitle from "../components/atoms/PageTitle";
+import Layout from "../components/Layout";
 
-const about = () => {
+const About = () => {
   return (
-    <>
-      <PageTitle title="About" />
+    <Layout title="About">
       <div className="dark:bg-gray-800">
         <Navbar />
         <div className="container mx-auto px-5 mt-12 lg:mt-20">
@@ -60,8 +58,8 @@ const about = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </Layout>
   );
 };
 
-export default about;
+export default About;

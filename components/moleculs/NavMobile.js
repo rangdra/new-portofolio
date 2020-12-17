@@ -1,10 +1,9 @@
-import React, { useState } from "react";
 import Link from "next/link";
 import { withRouter } from "next/router";
+import { navLink } from "../../utils/data";
 
 const NavMobile = ({ isOpen, setIsOpen, router, colorTheme, setTheme }) => {
   const path = router.pathname;
-  const [dark, setDark] = useState(false);
   return (
     <div
       className={`${
@@ -27,51 +26,19 @@ const NavMobile = ({ isOpen, setIsOpen, router, colorTheme, setTheme }) => {
         />
       </svg>
       <div className="flex flex-col h-64 justify-between">
-        <Link href="/">
-          <a
-            className={`${
-              "/" === path
-                ? "text-white dark:text-cyan-400 underline"
-                : "text-gray-800 dark:text-white"
-            } font-medium text-lg hover:underline hover:opacity-50 tracking-widest uppercase`}
-          >
-            Home
-          </a>
-        </Link>
-
-        <Link href="/blog">
-          <a
-            className={`${
-              "/blog" === path
-                ? "text-white dark:text-cyan-400 underline"
-                : "text-gray-800 dark:text-white"
-            } font-medium text-lg hover:underline hover:opacity-50 tracking-widest uppercase`}
-          >
-            Blog
-          </a>
-        </Link>
-        <Link href="/projects">
-          <a
-            className={`${
-              "/projects" === path
-                ? "text-white dark:text-cyan-400 underline"
-                : "text-gray-800 dark:text-white"
-            } font-medium text-lg hover:underline hover:opacity-50 tracking-widest uppercase`}
-          >
-            Projects
-          </a>
-        </Link>
-        <Link href="/about">
-          <a
-            className={`${
-              "/about" === path
-                ? "text-white dark:text-cyan-400 underline"
-                : "text-gray-800 dark:text-white"
-            } font-medium text-lg hover:underline hover:opacity-50 tracking-widest uppercase`}
-          >
-            About
-          </a>
-        </Link>
+        {navLink.map((nav) => (
+          <Link href={nav.href}>
+            <a
+              className={`${
+                "/" === path
+                  ? "text-white dark:text-cyan-400 underline"
+                  : "text-gray-800 dark:text-white"
+              } font-medium text-lg hover:underline hover:opacity-50 tracking-widest uppercase`}
+            >
+              {nav.title}
+            </a>
+          </Link>
+        ))}
       </div>
       <div
         className="cursor-pointer lg:hidden block p-2 rounded-full bg-cyan-500 shadow-md dark:bg-gray-900"
