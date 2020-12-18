@@ -8,8 +8,10 @@ const NavMobile = ({ isOpen, setIsOpen, router, colorTheme, setTheme }) => {
   return (
     <div
       className={`${
-        isOpen ? "translate-x-0" : "translate-x-full opacity-40"
-      } absolute top-0 right-0 bg-gradient-to-br from-cyan-300 to-teal-200 min-h-screen transform  lg:hidden w-1/2 flex flex-col items-end justify-around pr-4 transition duration-500 z-10 dark:from-gray-800 dark:to-gray-600`}
+        isOpen
+          ? "translate-x-0 lg:hidden block"
+          : "translate-x-full opacity-40 hidden"
+      } absolute top-0 right-0 bg-gradient-to-br from-cyan-300 to-teal-200 min-h-screen transform  lg:hidden w-1/2 flex flex-col items-end justify-around pr-4 z-10 dark:from-gray-800 dark:to-gray-600 transition duration-500`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

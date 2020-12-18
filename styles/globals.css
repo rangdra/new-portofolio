@@ -21,26 +21,10 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-.animation-slow {
-  animation: spin 5s linear infinite;
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-}
-
 .item-list:hover h3 {
   @apply dark:text-cyan-400;
 }
 
-body {
-  @apply overflow-x-hidden;
-}
 .toggle_3_dot {
   /* top: -0.1rem; */
   left: -0.25rem;
