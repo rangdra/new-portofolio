@@ -25,32 +25,6 @@ export const listBlogs = [
   },
 ];
 
-export const listProjects = [
-  {
-    id: 1,
-    title: "rangdra.netlify.app",
-    subtitle: "My personal website made with React and Gatsby.",
-    createdAt: "2020",
-  },
-  {
-    id: 2,
-    title: "rangdra.netlify.app",
-    subtitle: "My personal website made with React and Gatsby.",
-    createdAt: "2020",
-  },
-  {
-    id: 3,
-    title: "rangdra.netlify.app",
-    subtitle: "My personal website made with React and Gatsby.",
-    createdAt: "2020",
-  },
-  {
-    id: 4,
-    title: "rangdra.netlify.app",
-    subtitle: "My personal website made with React and Gatsby.",
-    createdAt: "2020",
-  },
-];
 export const listCardProjects = [
   {
     id: 1,

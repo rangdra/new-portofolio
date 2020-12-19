@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../atoms/Button";
 
 const Footer = () => {
   return (
@@ -14,9 +15,7 @@ const Footer = () => {
             feedback? You can also reach me around the web: GitHub, Twitter,
             Instagram
           </p>
-          <button className="px-14 mt-4 rounded-lg py-3 bg-gradient-to-bl from-cyan-500 to-teal-400 text-2xl text-white dark:text-gray-800 hover:bg-gradient-to-bl hover:from-cyan-600 hover:to-teal-500">
-            Say Hello
-          </button>
+          <Button />
         </div>
         <div className="mt-10">
           <div className="w-full lg:flex justify-end items-center hidden">

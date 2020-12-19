@@ -20,19 +20,24 @@ const Navbar = ({ router }) => {
         Brand
       </a> */}
       <Link href="/">
-        <a>
+        {/* <a>
           <Image src="/emoji.png" width={50} height={50} />
-        </a>
+        </a> */}
+        <div className="text-3xl bg-gradient-to-b from-gray-800 to-gray-400 dark:from-cyan-600 dark:to-cyan-400 inline text-transparent bg-clip-text font-bold">
+          RANGDRA
+        </div>
       </Link>
 
       <NavMobile isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="lg:flex w-full ml-12 items-center justify-between z-10 hidden">
+      <div className="lg:flex w-full ml-8 items-center justify-between z-10 hidden">
         <div className="">
           {navLink.map((nav) => (
             <Link href={nav.href}>
               <a
                 className={`${
-                  nav.href === path ? "text-cyan-500 dark:text-cyan-400" : ""
+                  nav.href === path
+                    ? "text-cyan-500 dark:text-cyan-400 underline"
+                    : ""
                 } mr-6 font-medium text-gray-600 text-lg hover:underline hover:opacity-50 dark:text-white`}
               >
                 {nav.title}

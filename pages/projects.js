@@ -31,19 +31,34 @@ const Projects = () => {
                 Front-end Development
               </h3>
               <p className="text-lg text-gray-500 dark:text-gray-400">
+                HTML, CSS, JavaScript
+              </p>
+              <p className="text-lg text-gray-500 dark:text-gray-400">
                 React: CRA and NextJs
               </p>
               <p className="text-lg text-gray-500 dark:text-gray-400">
-                Tailwind CSS and Component Libraries
-              </p>{" "}
+                Tailwind CSS
+              </p>
               <p className="text-lg text-gray-500 dark:text-gray-400">
                 Bootstrap
-              </p>{" "}
+              </p>
               <p className="text-lg text-gray-500 dark:text-gray-400">
-                Jest & React Testing Library
-              </p>{" "}
+                SASS / SCSS{" "}
+                <span className="text-base text-gray-300 dark:text-gray-600">
+                  --Basic
+                </span>
+              </p>
               <p className="text-lg text-gray-500 dark:text-gray-400">
-                SEO-friendly and Accessible Designs
+                Jest & React Testing Library{" "}
+                <span className="text-base text-gray-300 dark:text-gray-600">
+                  --Basic
+                </span>
+              </p>
+              <p className="text-lg text-gray-500 dark:text-gray-400">
+                SEO-friendly and Accessible Designs{" "}
+                <span className="text-base text-gray-300 dark:text-gray-600">
+                  --Basic
+                </span>
               </p>
             </div>
             <div className="">
@@ -51,10 +66,22 @@ const Projects = () => {
                 Back-end Development
               </h3>
               <p className="text-lg text-gray-500 dark:text-gray-400">
-                ExpressJs
+                NodeJs{" "}
+                <span className="text-base text-gray-300 dark:text-gray-600">
+                  --Basic
+                </span>
               </p>
               <p className="text-lg text-gray-500 dark:text-gray-400">
-                Mongo DB
+                ExpressJs{" "}
+                <span className="text-base text-gray-300 dark:text-gray-600">
+                  --Basic
+                </span>
+              </p>
+              <p className="text-lg text-gray-500 dark:text-gray-400">
+                Mongo DB{" "}
+                <span className="text-base text-gray-300 dark:text-gray-600">
+                  --Basic
+                </span>
               </p>
             </div>
           </div>
