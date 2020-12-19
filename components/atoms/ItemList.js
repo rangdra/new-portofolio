@@ -1,6 +1,6 @@
 const ItemList = ({ post }) => {
   return (
-    <div className="item-list w-full mb-4 border-b border-gray-200 dark:border-gray-600 hover:bg-cyan-100 hover:border-cyan-100 cursor-pointer dark:hover:bg-gray-900 dark:hover:border-gray-900 hover:rounded-lg lg:px-4 pt-2">
+    <div className="item-list w-full mb-4 hover:bg-cyan-100  cursor-pointer dark:hover:bg-gray-900 hover:rounded-lg lg:px-4 pt-2">
       <h3 className="text-gray-800 font-semibold text-xl dark:text-white">
         {post.title}
       </h3>
@@ -10,6 +10,7 @@ const ItemList = ({ post }) => {
           {post.createdAt}
         </span>
       </div>
+      <div id="borderB"></div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import useMode from "../../hooks/useMode";
+import { ThemeContext } from "../../hooks/themeContext";
+import { useContext } from "react";
 
 export function Toggle({ onClick }) {
   return (
@@ -58,9 +59,9 @@ export const Toggle2 = () => {
 };
 
 export const Toggle3 = () => {
-  const [colorTheme, setTheme] = useMode();
+  const { theme, setTheme } = useContext(ThemeContext);
   function isDark() {
-    return colorTheme === "dark";
+    return theme === "dark";
   }
   return (
     <label for="toogleA" class="flex items-center cursor-pointer">
@@ -71,7 +72,7 @@ export const Toggle3 = () => {
           id="toogleA"
           type="checkbox"
           class="hidden"
-          // checked={isDark}
+          checked={isDark()}
           onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
         />
         {/* line */}

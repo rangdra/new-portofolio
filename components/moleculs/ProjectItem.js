@@ -1,8 +1,9 @@
 import ItemList from "../atoms/ItemList";
-import { listProjects } from "../../utils/data";
+import { listCardProjects } from "../../utils/data";
+import Link from "next/link";
 
 const ProjectItem = () => {
-  const listProject = listProjects.filter(function (blog) {
+  const listProject = listCardProjects.filter(function (blog) {
     return blog.id < 4;
   });
   return (
@@ -13,6 +14,11 @@ const ProjectItem = () => {
       {listProject.map((post) => {
         return <ItemList key={post.id} post={post} />;
       })}
+      <Link href="/projects">
+        <a className="w-full flex justify-end text-blue-500 pr-4 underline hover:opacity-50">
+          View All Projects
+        </a>
+      </Link>
     </div>
   );
 };

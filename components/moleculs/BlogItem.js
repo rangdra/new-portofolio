@@ -1,5 +1,6 @@
 import ItemList from "../atoms/ItemList";
 import { listBlogs } from "../../utils/data";
+import Link from "next/link";
 
 const BlogItem = () => {
   const listBlog = listBlogs.filter(function (blog) {
@@ -13,6 +14,11 @@ const BlogItem = () => {
       {listBlog.map((post) => (
         <ItemList key={post.id} post={post} />
       ))}
+      <Link href="/blog">
+        <a className="w-full flex justify-end text-blue-500 pr-4 underline hover:opacity-50">
+          View All Blogs
+        </a>
+      </Link>
     </div>
   );
 };

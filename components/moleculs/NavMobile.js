@@ -3,7 +3,7 @@ import { withRouter } from "next/router";
 import { navLink } from "../../utils/data";
 import { Toggle3 } from "../atoms/Toggle";
 
-const NavMobile = ({ isOpen, setIsOpen, router, colorTheme, setTheme }) => {
+const NavMobile = ({ isOpen, setIsOpen, router }) => {
   const path = router.pathname;
   return (
     <div

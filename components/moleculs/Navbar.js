@@ -2,7 +2,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { withRouter } from "next/router";
-import useMode from "../../hooks/useMode";
 import NavMobile from "./NavMobile";
 import { navLink } from "../../utils/data";
 import { Toggle3 } from "../atoms/Toggle";
@@ -10,7 +9,6 @@ import { Toggle3 } from "../atoms/Toggle";
 const Navbar = ({ router }) => {
   const path = router.pathname;
   const [isOpen, setIsOpen] = useState(false);
-  const [colorTheme, setTheme] = useMode();
 
   return (
     <div className="container h-32 flex items-center mx-auto px-5 bg-transparent justify-between lg:justify-start">
@@ -27,12 +25,7 @@ const Navbar = ({ router }) => {
         </a>
       </Link>
 
-      <NavMobile
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        colorTheme={colorTheme}
-        setTheme={setTheme}
-      />
+      <NavMobile isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="lg:flex w-full ml-12 items-center justify-between z-10 hidden">
         <div className="">
           {navLink.map((nav) => (
