@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { ThemeProvider } from "../hooks/themeContext";
+import Footer from "./moleculs/Footer";
+import Navbar from "./moleculs/Navbar";
 
 const Layout = ({ title, children }) => {
   return (
@@ -8,7 +10,11 @@ const Layout = ({ title, children }) => {
         <title>{title} | Rangdra Pangestu</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      {children}
+
+      <div className="dark:bg-gray-800">
+        <Navbar />
+        <div className="container mx-auto px-5">{children}</div> <Footer />
+      </div>
     </ThemeProvider>
   );
 };

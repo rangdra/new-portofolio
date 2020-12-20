@@ -7,7 +7,7 @@ const BlogItem = () => {
     return blog.id < 4;
   });
   return (
-    <div className="container mx-auto px-5 lg:mt-44 mt-24">
+    <div className="lg:mt-44 mt-24">
       <h2 className="text-cyan-500 dark:text-cyan-400 uppercase tracking-widest text-xl mb-4">
         Latest Writings
       </h2>

@@ -15,14 +15,7 @@ const Navbar = ({ router }) => {
       <div className="absolute hidden lg:block -top-60 -left-14 opacity-20">
         <Image src="/vector.png" width={720} height={380} />
       </div>
-
-      {/* <a href="#" className="text-gray-800 text-4xl font-bold uppercase z-10 ">
-        Brand
-      </a> */}
       <Link href="/">
-        {/* <a>
-          <Image src="/emoji.png" width={50} height={50} />
-        </a> */}
         <div className="text-3xl bg-gradient-to-b from-gray-800 to-gray-400 dark:from-cyan-600 dark:to-cyan-400 inline text-transparent bg-clip-text font-bold">
           RANGDRA
         </div>

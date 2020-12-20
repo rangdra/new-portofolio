@@ -7,7 +7,7 @@ const ProjectItem = () => {
     return blog.id < 4;
   });
   return (
-    <div className="container lg:mt-40 mt-24 mx-auto px-5">
+    <div className="lg:mt-40 mt-24">
       <h2 className="text-cyan-500 dark:text-cyan-400 uppercase tracking-widest text-xl mb-4">
         Projects
       </h2>
