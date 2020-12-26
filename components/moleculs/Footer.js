@@ -4,7 +4,7 @@ import Button from "../atoms/Button";
 
 const Footer = () => {
   return (
-    <footer className="lg:mt-44 mt-32 bg-gradient-to-br from-cyan-200 to-cyan-100 lg:pb-10 pb-8 dark:from-gray-900 dark:to-gray-900">
+    <footer className="lg:mt-36 mt-32 bg-gradient-to-br from-cyan-200 to-cyan-100 lg:pb-10 pb-8 dark:from-gray-900 dark:to-gray-900">
       <div className="container mx-auto px-5 ">
         <div className="text-center py-12">
           <h1 className="text-3xl font-semibold  text-gray-800 dark:text-white">
@@ -55,10 +55,16 @@ const Footer = () => {
               >
                 <Image src="/github.svg" width={32} height={32} />
               </a>
-              <a href="#" className="mr-4">
-                <Image src="/twitter.svg" width={32} height={32} />
+              <a
+                href="https://www.linkedin.com/in/rangdra-pangestu-7b991219a/"
+                className="mr-4"
+              >
+                <Image src="/linkedin.svg" width={32} height={32} />
               </a>
-              <a href="#" className="mr-4">
+              <a
+                href="https://www.linkedin.com/in/rangdra-pangestu-7b991219a/"
+                className="mr-4"
+              >
                 <Image src="/instagram.svg" width={32} height={32} />
               </a>
             </div>

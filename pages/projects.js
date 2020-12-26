@@ -1,9 +1,12 @@
+import { useState } from "react";
 import CardProject from "../components/atoms/CardProject";
 import TitlePage from "../components/atoms/TitlePage";
-import { listCardProjects } from "../utils/data";
+import { listProjects } from "../utils/data";
 import Layout from "../components/Layout";
 
-const Projects = () => {
+const Projects = (props) => {
+  const [projects] = useState(props.projects);
+
   return (
     <Layout title="Projects">
       <TitlePage
@@ -12,7 +15,7 @@ const Projects = () => {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {listCardProjects.map((project) => (
+        {listProjects.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
       </div>
@@ -36,46 +39,16 @@ const Projects = () => {
           </p>
           <p className="text-lg text-gray-500 dark:text-gray-400">Bootstrap</p>
           <p className="text-lg text-gray-500 dark:text-gray-400">
-            SASS / SCSS{" "}
-            <span className="text-base text-gray-300 dark:text-gray-600">
-              --Basic
-            </span>
-          </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400">
-            Jest & React Testing Library{" "}
-            <span className="text-base text-gray-300 dark:text-gray-600">
-              --Basic
-            </span>
-          </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400">
-            SEO-friendly and Accessible Designs{" "}
-            <span className="text-base text-gray-300 dark:text-gray-600">
-              --Basic
-            </span>
+            SASS / SCSS
           </p>
         </div>
         <div className="">
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-1">
             Back-end Development
           </h3>
-          <p className="text-lg text-gray-500 dark:text-gray-400">
-            NodeJs{" "}
-            <span className="text-base text-gray-300 dark:text-gray-600">
-              --Basic
-            </span>
-          </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400">
-            ExpressJs{" "}
-            <span className="text-base text-gray-300 dark:text-gray-600">
-              --Basic
-            </span>
-          </p>
-          <p className="text-lg text-gray-500 dark:text-gray-400">
-            Mongo DB{" "}
-            <span className="text-base text-gray-300 dark:text-gray-600">
-              --Basic
-            </span>
-          </p>
+          <p className="text-lg text-gray-500 dark:text-gray-400">NodeJs</p>
+          <p className="text-lg text-gray-500 dark:text-gray-400">ExpressJs</p>
+          <p className="text-lg text-gray-500 dark:text-gray-400">Mongo DB</p>
         </div>
       </div>
     </Layout>

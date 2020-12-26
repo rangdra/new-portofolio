@@ -29,8 +29,8 @@ const NavMobile = ({ isOpen, setIsOpen, router }) => {
         />
       </svg>
       <div className="flex flex-col h-64 justify-between">
-        {navLink.map((nav) => (
-          <Link href={nav.href}>
+        {navLink.map((nav, idx) => (
+          <Link key={idx} href={nav.href}>
             <a
               className={`${
                 nav.href === path

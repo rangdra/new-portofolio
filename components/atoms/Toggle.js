@@ -4,28 +4,28 @@ import { useContext } from "react";
 export function Toggle({ onClick }) {
   return (
     <label
-      for="toogleA"
-      class="flex items-center cursor-pointer"
+      htmlFor="toogleA"
+      className="flex items-center cursor-pointer"
       onClick={onClick}
     >
       {/* toggle */}
-      <div class="relative">
+      <div className="relative">
         {/* input */}
-        <input id="toogleA" type="checkbox" class="hidden" />
+        <input id="toogleA" type="checkbox" className="hidden" />
         {/* line */}
-        <div class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+        <div className="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
         {/* dot */}
-        <div class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
+        <div className="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
       </div>
       {/* label */}
-      <div class="ml-3 text-gray-700 font-medium">Dark Mode</div>
+      <div className="ml-3 text-gray-700 font-medium">Dark Mode</div>
     </label>
   );
 }
 
 export const Toggle2 = () => {
   return (
-    <label for="toogleA" class="flex items-center cursor-pointer">
+    <label htmlFor="toogleA" className="flex items-center cursor-pointer">
       {/* input */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -64,19 +64,19 @@ export const Toggle3 = () => {
     return theme === "dark";
   }
   return (
-    <label for="toogleA" class="flex items-center cursor-pointer">
+    <label htmlFor="toogleA" className="flex items-center cursor-pointer">
       {/* toggle */}
-      <div class="relative">
+      <div className="relative">
         {/* input */}
         <input
           id="toogleA"
           type="checkbox"
-          class="hidden"
+          className="hidden"
           checked={isDark()}
           onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
         />
         {/* line */}
-        <div class="toggle_3_line w-10 h-6 bg-transparent rounded-full border-gray-300 border-4 dark:border-cyan-400 dark:bg-cyan-800"></div>
+        <div className="toggle_3_line w-10 h-6 bg-transparent rounded-full border-gray-300 border-4 dark:border-cyan-400 dark:bg-cyan-800"></div>
         {/* dot */}
         {/* <div class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div> */}
         <div className="bg-black toggle_3_dot w-7 h-7 -top-0.5 flex items-center justify-center absolute  rounded-full inset-y-0 left-0 transform -rotate-90">

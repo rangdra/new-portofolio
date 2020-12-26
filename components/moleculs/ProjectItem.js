@@ -1,13 +1,13 @@
 import ItemList from "../atoms/ItemList";
-import { listCardProjects } from "../../utils/data";
+import { listProjects } from "../../utils/data";
 import Link from "next/link";
 
 const ProjectItem = () => {
-  const listProject = listCardProjects.filter(function (blog) {
+  const listProject = listProjects.filter(function (blog) {
     return blog.id < 4;
   });
   return (
-    <div className="lg:mt-40 mt-24">
+    <div className="lg:mt-24 mt-24">
       <h2 className="text-cyan-500 dark:text-cyan-400 uppercase tracking-widest text-xl mb-4">
         Projects
       </h2>

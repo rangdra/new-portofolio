@@ -21,7 +21,7 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-.item-list:hover h3 {
+.item-list:hover a {
   @apply dark:text-cyan-400;
 }
 

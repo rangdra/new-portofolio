@@ -16,16 +16,16 @@ const Navbar = ({ router }) => {
         <Image src="/vector.png" width={720} height={380} />
       </div>
       <Link href="/">
-        <div className="text-3xl bg-gradient-to-b from-gray-800 to-gray-400 dark:from-cyan-600 dark:to-cyan-400 inline text-transparent bg-clip-text font-bold">
+        <a className="text-3xl bg-gradient-to-b from-gray-800 to-gray-400 dark:from-cyan-600 dark:to-cyan-400 inline text-transparent bg-clip-text font-bold">
           RANGDRA
-        </div>
+        </a>
       </Link>
 
       <NavMobile isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="lg:flex w-full ml-8 items-center justify-between z-10 hidden">
         <div className="">
-          {navLink.map((nav) => (
-            <Link href={nav.href}>
+          {navLink.map((nav, idx) => (
+            <Link key={idx} href={nav.href}>
               <a
                 className={`${
                   nav.href === path
