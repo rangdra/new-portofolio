@@ -18,11 +18,12 @@ export const listBlogs = [
 export const listProjects = [
   {
     id: "1",
-    title: "rangdra.netlify.app",
+    title: "My Personal Website",
     subtitle: "Website pribadi saya di buat dengan Next Js and Tailwind CSS.",
     createdAt: "2020",
     linkWeb: "https://rapangestu.vercel.app/",
     linkCode: "https://github.com/rangdra/new-portofolio",
+    images: [],
   },
   {
     id: "2",
@@ -32,6 +33,18 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://happyshopapp.herokuapp.com/",
     linkCode: "#",
+    images: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589028/img-projects/happyshop/hs1_wztzcj.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589026/img-projects/happyshop/hs2_opvhc0.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589025/img-projects/happyshop/hs9_i1cvjx.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589025/img-projects/happyshop/hs10_dmw2ec.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589028/img-projects/happyshop/hs8_umy49r.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589026/img-projects/happyshop/hs3_tmzlcb.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589027/img-projects/happyshop/hs5_xx6ic8.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589026/img-projects/happyshop/hs4_a0lezl.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589026/img-projects/happyshop/hs6_ohon0c.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589028/img-projects/happyshop/hs7_i134vk.png",
+    ],
   },
   {
     id: "3",
@@ -40,6 +53,16 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://staycation-rp.netlify.app/",
     linkCode: "#",
+    images: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589659/img-projects/staycation/sc1_b6rvfz.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589660/img-projects/staycation/sc2_tnbbxa.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589657/img-projects/staycation/sc3_mr5woh.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589662/img-projects/staycation/sc4_fygsow.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589657/img-projects/staycation/sc5_nljdv7.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589654/img-projects/staycation/sc6_b9gdwb.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589656/img-projects/staycation/sc7_yiphbt.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609589652/img-projects/staycation/sc8_a8rgkf.png",
+    ],
   },
   {
     id: "4",
@@ -49,6 +72,9 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://covid19-tracker-rp.netlify.app/",
     linkCode: "https://github.com/rangdra/covid19-tracker",
+    images: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1609568968/img-projects/c19track_l8bxh5.png",
+    ],
   },
   {
     id: "5",
@@ -58,6 +84,10 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://movie-app-3c057.web.app/",
     linkCode: "https://github.com/rangdra/movie-app",
+    images: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590214/img-projects/movie%20app/ma1_jcrpau.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590217/img-projects/movie%20app/ma2_wmhiyi.png",
+    ],
   },
   {
     id: "6",
@@ -66,6 +96,9 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://post-projects-api.netlify.app/",
     linkCode: "#",
+    images: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1609568962/img-projects/wkwkapp_mhzvqm.png",
+    ],
   },
   {
     id: "7",
@@ -75,6 +108,11 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://clone-bde84.web.app/",
     linkCode: "#",
+    images: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590485/img-projects/amclone/ac1_ohwaxy.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590478/img-projects/amclone/ac3_ncquyh.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590475/img-projects/amclone/am2_m5uvox.png",
+    ],
   },
   {
     id: "8",
@@ -83,6 +121,12 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://airbnb-clone-70faf.web.app/",
     linkCode: "#",
+    image: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590808/img-projects/bnbclone/bnb1_wcltmh.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590812/img-projects/bnbclone/bnb2_mf4s4e.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590795/img-projects/bnbclone/bnb3_gvyu4i.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1609590800/img-projects/bnbclone/bnb4_sazkbc.png",
+    ],
   },
 ];
 
@@ -91,10 +135,10 @@ export const navLink = [
     href: "/",
     title: "Home",
   },
-  {
-    href: "/blog",
-    title: "Blog",
-  },
+  // {
+  //   href: "/blog",
+  //   title: "Blog",
+  // },
   {
     href: "/projects",
     title: "Projects",

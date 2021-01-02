@@ -3,6 +3,7 @@ import Link from "next/link";
 import Button from "../atoms/Button";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="lg:mt-36 mt-32 bg-gradient-to-br from-cyan-200 to-cyan-100 lg:pb-10 pb-8 dark:from-gray-900 dark:to-gray-900">
       <div className="container mx-auto px-5 ">
@@ -42,30 +43,45 @@ const Footer = () => {
           </div>
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between mt-4">
             <span className="text-sm text-gray-500 dark:text-gray-300 lg:mt-0 mt-2">
-              &copy; 2020 Rangdra Pangestu. All Rights Reserved.
+              &copy; {year} Rangdra Pangestu. All Rights Reserved.
             </span>
             <div className="flex">
               <a href="#" className="mr-4">
-                <Image src="/email.svg" width={32} height={32} />
+                <Image src="/email.svg" loading="lazy" width={32} height={32} />
               </a>
               <a
                 href="https://github.com/rangdra"
                 target="_blank"
                 className="mr-4"
               >
-                <Image src="/github.svg" width={32} height={32} />
+                <Image
+                  src="/github.svg"
+                  loading="lazy"
+                  width={32}
+                  height={32}
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/rangdra-pangestu-7b991219a/"
                 className="mr-4"
               >
-                <Image src="/linkedin.svg" width={32} height={32} />
+                <Image
+                  src="/linkedin.svg"
+                  loading="lazy"
+                  width={32}
+                  height={32}
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/rangdra-pangestu-7b991219a/"
                 className="mr-4"
               >
-                <Image src="/instagram.svg" width={32} height={32} />
+                <Image
+                  src="/instagram.svg"
+                  loading="lazy"
+                  width={32}
+                  height={32}
+                />
               </a>
             </div>
           </div>

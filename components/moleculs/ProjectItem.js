@@ -12,7 +12,13 @@ const ProjectItem = () => {
         Projects
       </h2>
       {listProject.map((post) => {
-        return <ItemList key={post.id} post={post} />;
+        return (
+          <Link href={`/project/${post.id}`}>
+            <a>
+              <ItemList key={post.id} post={post} />
+            </a>
+          </Link>
+        );
       })}
       <Link href="/projects">
         <a className="w-full flex justify-end text-blue-400 pr-4 underline hover:opacity-50">

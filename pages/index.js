@@ -9,7 +9,7 @@ const Home = () => {
     <Layout title="Home">
       {/* <NavbarExample /> */}
       <Hero />
-      <BlogItem />
+      {/* <BlogItem /> */}
       <ProjectItem />
     </Layout>
   );

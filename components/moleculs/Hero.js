@@ -16,9 +16,19 @@ const Hero = () => {
       </h1>
       <div className="w-full flex justify-center lg:mb-0 mb-6">
         {theme === "light" ? (
-          <img className="w-full h-80" src="/hero-img.png" alt="" />
+          <img
+            className="w-full h-80"
+            loading="lazy"
+            src="/hero-img.png"
+            alt="hero"
+          />
         ) : (
-          <img className="w-full h-80" src="/hero-img-dark.png" alt="" />
+          <img
+            className="w-full h-80"
+            loading="lazy"
+            src="/hero-img-dark.png"
+            alt="hero"
+          />
         )}
       </div>
     </div>
