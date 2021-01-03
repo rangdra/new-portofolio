@@ -13,7 +13,7 @@ const ProjectItem = () => {
       </h2>
       {listProject.map((post) => {
         return (
-          <Link href={`/project/${post.id}`}>
+          <Link key={listProject.id} href={`/project/${post.id}`}>
             <a>
               <ItemList key={post.id} post={post} />
             </a>

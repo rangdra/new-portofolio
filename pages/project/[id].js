@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { listProjects } from "../../utils/data";
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
@@ -6,8 +6,20 @@ import Layout from "../../components/Layout";
 const DetailProject = () => {
   const router = useRouter();
   const { id } = router.query;
-  const project = listProjects.find((item) => item.id === id);
+
   const [tab, setTab] = useState(0);
+
+  const [project, setProject] = useState({});
+
+  const getProject = (item) => {
+    const res = item.find((i) => i.id === id);
+    setProject(res);
+  };
+
+  useEffect(() => {
+    getProject(listProjects);
+    console.log(project);
+  }, [project]);
 
   return (
     <Layout title="Detail Project">
@@ -33,25 +45,32 @@ const DetailProject = () => {
       <div className="my-4 lg:my-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="">
           <img
-            src={project.images[tab]}
+            src={
+              project.images === undefined ? "no images" : project.images[tab]
+            }
             className={`w-full border border-gray-400 p-1.5 mb-1`}
             style={{ height: "350px" }}
             alt="img-thumbnail"
             loading="lazy"
           />
 
-          {project.images.length === 0
+          {project.images === undefined
             ? "No images"
-            : project.images.map((img, idx) => (
-                <img
-                  src={img}
-                  className={`h-24 w-24 inline-flex border  mr-1 cursor-pointer ${
-                    tab === idx ? "border-red-400 p-0.5" : "border-gray-400 p-1"
-                  }`}
-                  onClick={() => setTab(idx)}
-                  loading="lazy"
-                />
-              ))}
+            : project.images.map((img, idx) => {
+                return (
+                  <img
+                    src={img}
+                    key={idx}
+                    className={`h-24 w-24 inline-flex border  mr-1 cursor-pointer ${
+                      tab === idx
+                        ? "border-red-400 p-0.5"
+                        : "border-gray-400 p-1"
+                    }`}
+                    onClick={() => setTab(idx)}
+                    loading="lazy"
+                  />
+                );
+              })}
         </div>
         <div className="w-full">
           <h2 className="text-3xl lg:mt-0 mt-6 text-gray-800 font-semibold dark:text-white">
