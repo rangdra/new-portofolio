@@ -40,16 +40,18 @@ const DetailProject = () => {
             loading="lazy"
           />
 
-          {project.images.map((img, idx) => (
-            <img
-              src={img}
-              className={`h-24 w-24 inline-flex border  mr-1 cursor-pointer ${
-                tab === idx ? "border-red-400 p-0.5" : "border-gray-400 p-1"
-              }`}
-              onClick={() => setTab(idx)}
-              loading="lazy"
-            />
-          ))}
+          {project.images.length === 0
+            ? "No images"
+            : project.images.map((img, idx) => (
+                <img
+                  src={img}
+                  className={`h-24 w-24 inline-flex border  mr-1 cursor-pointer ${
+                    tab === idx ? "border-red-400 p-0.5" : "border-gray-400 p-1"
+                  }`}
+                  onClick={() => setTab(idx)}
+                  loading="lazy"
+                />
+              ))}
         </div>
         <div className="w-full">
           <h2 className="text-3xl lg:mt-0 mt-6 text-gray-800 font-semibold dark:text-white">
