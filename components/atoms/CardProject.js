@@ -7,7 +7,7 @@ const CardProject = ({ project }) => {
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-400 dark:bg-gray-200 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-gray-500 dark:bg-white"></span>
       </span>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center w-full">
         <h1 className="text-gray-800 dark:text-white text-3xl font-semibold">
           {project.title}
         </h1>
@@ -15,9 +15,9 @@ const CardProject = ({ project }) => {
           {project.createdAt}
         </p>
       </div>
-      <h3 className="text-gray-500 w-3/4 text-lg dark:text-gray-400 mb-12">
+      <p className="text-card text-gray-500 w-3/4 text-lg dark:text-gray-400 mb-6">
         {project.subtitle}
-      </h3>
+      </p>
       <Link href={`/project/${project.id}`}>
         <a className="px-4 py-2 bg-gray-700 dark:bg-cyan-600 text-white hover:bg-cyan-600 dark:hover:bg-gray-700 rounded ">
           Detail

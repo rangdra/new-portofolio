@@ -42,3 +42,10 @@ input:checked ~ .toggle_3_dot {
   transform: translateX(60%);
   @apply bg-cyan-400;
 }
+
+.card .text-card {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
