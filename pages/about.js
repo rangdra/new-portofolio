@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 const About = () => {
   return (
     <Layout title="About">
-      <div className="mt-12 lg:mt-20">
+      <div className="mt-6 lg:mt-20">
         <div className="lg:w-1/2 w-full mb-12">
           <h1 className="text-cyan-500 font-semibold mb-4 text-3xl">
             About Me

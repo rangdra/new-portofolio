@@ -9,7 +9,9 @@ const ItemList = ({ post }) => {
         </a>
       </Link>
       <div className="flex justify-between flex-col lg:flex-row mb-2">
-        <p className="text-gray-600 dark:text-gray-400">{post.subtitle}</p>
+        <p className="text-gray-600 dark:text-gray-400 text-item-list">
+          {post.subtitle}
+        </p>
         <span className="text-gray-600 dark:text-gray-400">
           {post.createdAt}
         </span>

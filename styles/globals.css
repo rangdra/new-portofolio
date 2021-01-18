@@ -43,9 +43,18 @@ input:checked ~ .toggle_3_dot {
   @apply bg-cyan-400;
 }
 
-.card .text-card {
+.text-card {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+@media screen and (max-width: 567px) {
+  .text-item-list {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
 }

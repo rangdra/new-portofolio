@@ -10,6 +10,6 @@ const TitlePage = ({ title, subtitle, className }) => {
 };
 
 TitlePage.defaultProps = {
-  className: "mt-20 mb-10",
+  className: "mt-6 mb-10 lg:mt-20",
 };
 export default TitlePage;
