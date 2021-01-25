@@ -9,17 +9,7 @@ const DetailProject = () => {
 
   const [tab, setTab] = useState(0);
 
-  const [project, setProject] = useState({});
-
-  const getProject = (item) => {
-    const res = item.find((i) => i.id === id);
-    setProject(res);
-  };
-
-  useEffect(() => {
-    getProject(listProjects);
-    console.log(project);
-  }, [project]);
+  const project = listProjects.find((i) => i.id === id);
 
   return (
     <Layout title="Detail Project">
@@ -45,44 +35,38 @@ const DetailProject = () => {
       <div className="my-4 lg:my-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="">
           <img
-            src={
-              project.images === undefined ? "no images" : project.images[tab]
-            }
+            src={project?.images[tab]}
             className={`w-full border border-gray-400 p-1.5 mb-1`}
             style={{ height: "350px" }}
             alt="img-thumbnail"
             loading="lazy"
           />
 
-          {project.images === undefined
-            ? "No images"
-            : project.images.map((img, idx) => {
-                return (
-                  <img
-                    src={img}
-                    key={idx}
-                    className={`h-24 w-24 inline-flex border  mr-1 cursor-pointer ${
-                      tab === idx
-                        ? "border-red-400 p-0.5"
-                        : "border-gray-400 p-1"
-                    }`}
-                    onClick={() => setTab(idx)}
-                    loading="lazy"
-                  />
-                );
-              })}
+          {project?.images.map((img, idx) => {
+            return (
+              <img
+                src={img}
+                key={idx}
+                className={`h-24 w-24 inline-flex border  mr-1 cursor-pointer ${
+                  tab === idx ? "border-red-400 p-0.5" : "border-gray-400 p-1"
+                }`}
+                onClick={() => setTab(idx)}
+                loading="lazy"
+              />
+            );
+          })}
         </div>
         <div className="w-full">
           <h2 className="text-3xl lg:mt-0 mt-6 text-gray-800 font-semibold dark:text-white">
-            {project.title}
+            {project?.title}
           </h2>
           <div className="flex justify-between items-center text-red-500 text-lg font-semibold">
-            <p>{project.createdAt}</p>
+            <p>{project?.createdAt}</p>
           </div>
-          <p className=" text-gray-400 my-8">{project.subtitle}</p>
+          <p className=" text-gray-400 my-8">{project?.subtitle}</p>
           <div className="flex items-center">
             <a
-              href={project.linkWeb}
+              href={project?.linkWeb}
               target="_blank"
               className="flex items-center mr-4 bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-600"
             >
@@ -103,7 +87,7 @@ const DetailProject = () => {
               </svg>
             </a>
             <a
-              href={project.linkCode}
+              href={project?.linkCode}
               className="flex items-center bg-indigo-500 px-4 py-2 rounded hover:bg-indigo-600"
             >
               <p className="text-white font-medium mr-1 hover:text-opacity-50 hover:underline">
