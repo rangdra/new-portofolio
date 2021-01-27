@@ -44,6 +44,7 @@ export const listProjects = [
       "https://res.cloudinary.com/rangdra/image/upload/v1611581333/img-projects/bl/bl8_ak0smj.png",
       "https://res.cloudinary.com/rangdra/image/upload/v1611581339/img-projects/bl/bl9_bqgu78.png",
       "https://res.cloudinary.com/rangdra/image/upload/v1611581342/img-projects/bl/bl10_mdfist.png",
+      "https://res.cloudinary.com/rangdra/image/upload/v1611581346/img-projects/bl/bl2_hqtxf5.png",
       "https://res.cloudinary.com/rangdra/image/upload/v1611581333/img-projects/bl/bl11_ybtowi.png",
     ],
   },
