@@ -1,12 +1,9 @@
-import { useState } from "react";
 import CardProject from "../components/atoms/CardProject";
 import TitlePage from "../components/atoms/TitlePage";
 import { listProjects } from "../utils/data";
 import Layout from "../components/Layout";
 
-const Projects = (props) => {
-  const [projects] = useState(props.projects);
-
+const Projects = () => {
   return (
     <Layout title="Projects">
       <TitlePage
@@ -15,7 +12,7 @@ const Projects = (props) => {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {listProjects.map((project) => (
+        {listProjects?.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
       </div>
