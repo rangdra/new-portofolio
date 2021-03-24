@@ -91,17 +91,17 @@ export const listProjects = [
       "https://res.cloudinary.com/rangdra/image/upload/v1609590217/img-projects/movie%20app/ma2_wmhiyi.png",
     ],
   },
-  {
-    id: "6",
-    title: "Notes Memories App",
-    subtitle: "Website pemesanan Notes dibuat dengan MERN STACK.",
-    createdAt: "2020",
-    linkWeb: "https://post-projects-api.netlify.app/",
-    linkCode: "#",
-    images: [
-      "https://res.cloudinary.com/rangdra/image/upload/v1609568962/img-projects/wkwkapp_mhzvqm.png",
-    ],
-  },
+  // {
+  //   id: "6",
+  //   title: "Notes Memories App",
+  //   subtitle: "Website pemesanan Notes dibuat dengan MERN STACK.",
+  //   createdAt: "2020",
+  //   linkWeb: "https://post-projects-api.netlify.app/",
+  //   linkCode: "#",
+  //   images: [
+  //     "https://res.cloudinary.com/rangdra/image/upload/v1609568962/img-projects/wkwkapp_mhzvqm.png",
+  //   ],
+  // },
   {
     id: "7",
     title: "Amazon Clone",

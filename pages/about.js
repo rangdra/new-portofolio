@@ -40,9 +40,10 @@ const About = () => {
             What else?
           </h1>
           <p className="text-gray-500 dark:text-gray-400 text-justify">
-            Ketika saya sedang tidak ngoding atau kuliah, saya suka menonton
+            {/* Ketika saya sedang tidak ngoding atau kuliah, saya suka menonton
             video tentang web development di yt atau diplatform lainnya. dan
-            saya suka bermain game terutama game MOBA 😍
+            saya suka bermain game terutama game MOBA 😍 */}
+            -
           </p>
         </div>
       </div>

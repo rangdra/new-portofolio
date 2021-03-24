@@ -15,7 +15,7 @@ const Hero = () => {
         </span>
       </h1>
       <div className="w-full flex justify-center lg:mb-0 mb-6">
-        {theme === "light" ? (
+        {/* {theme === "light" ? (
           <img
             className="w-full h-80"
             loading="lazy"
@@ -29,7 +29,13 @@ const Hero = () => {
             src="/hero-img-dark.png"
             alt="hero"
           />
-        )}
+        )} */}
+        <img
+          className="w-full h-80"
+          loading="lazy"
+          src="/airplane.svg"
+          alt="hero"
+        />
       </div>
     </div>
   );

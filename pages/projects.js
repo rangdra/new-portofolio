@@ -8,7 +8,7 @@ const Projects = () => {
     <Layout title="Projects">
       <TitlePage
         title="Projects"
-        subtitle="Collection of web and game development side projects."
+        subtitle="Collection of web development and side projects."
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
