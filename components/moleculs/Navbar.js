@@ -31,7 +31,7 @@ const Navbar = ({ router }) => {
                   nav.href === path
                     ? "text-cyan-500 dark:text-cyan-400 underline"
                     : ""
-                } mr-6 font-medium text-gray-600 text-lg hover:underline hover:opacity-50 dark:text-white`}
+                } mr-6 font-medium text-gray-600 text-lg hover:underline transition-all duration-200 hover:opacity-50 dark:text-white`}
               >
                 {nav.title}
               </a>

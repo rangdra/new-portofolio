@@ -19,7 +19,7 @@ const CardProject = ({ project }) => {
         {project.subtitle}
       </p>
       <Link href={`/project/${project.id}`}>
-        <a className="px-4 py-2 bg-gray-700 dark:bg-cyan-600 text-white hover:bg-cyan-600 dark:hover:bg-gray-700 rounded ">
+        <a className="px-4 py-2 transition-all duration-200 bg-gray-700 dark:bg-cyan-600 text-white hover:bg-cyan-600 dark:hover:bg-gray-700 rounded ">
           Detail
         </a>
       </Link>

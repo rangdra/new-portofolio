@@ -68,7 +68,7 @@ const DetailProject = () => {
             <a
               href={project?.linkWeb}
               target="_blank"
-              className="flex items-center mr-4 bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-600"
+              className="flex items-center mr-4 transition-all duration-200 bg-cyan-500 px-4 py-2 rounded hover:bg-cyan-600"
             >
               <p className="text-white font-medium mr-1 hover:text-opacity-50 hover:underline">
                 View
@@ -88,7 +88,7 @@ const DetailProject = () => {
             </a>
             <a
               href={project?.linkCode}
-              className="flex items-center bg-indigo-500 px-4 py-2 rounded hover:bg-indigo-600"
+              className="flex items-center transition-all duration-200 bg-indigo-500 px-4 py-2 rounded hover:bg-indigo-600"
             >
               <p className="text-white font-medium mr-1 hover:text-opacity-50 hover:underline">
                 Code

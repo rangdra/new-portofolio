@@ -21,22 +21,22 @@ const Footer = () => {
         <div className="mt-10">
           <div className="w-full lg:flex justify-end items-center hidden">
             <Link href="/">
-              <a className="mr-4 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
+              <a className="mr-4 transition-all duration-200 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
                 Home
               </a>
             </Link>
             <Link href="/blog">
-              <a className="mr-4 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
+              <a className="mr-4 transition-all duration-200 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
                 Blog
               </a>
             </Link>
             <Link href="/projects">
-              <a className="mr-4 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
+              <a className="mr-4 transition-all duration-200 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
                 Projects
               </a>
             </Link>
             <Link href="/about">
-              <a className="mr-4 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
+              <a className="mr-4 transition-all duration-200 text-gray-500 dark:text-gray-300 text-lg hover:underline hover:opacity-50">
                 About
               </a>
             </Link>

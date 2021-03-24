@@ -21,7 +21,7 @@ const ProjectItem = () => {
         );
       })}
       <Link href="/projects">
-        <a className="w-full flex justify-end text-blue-400 pr-4 underline hover:opacity-50">
+        <a className="w-full flex transition-all duration-200 justify-end text-blue-400 pr-4 underline hover:opacity-50">
           View All Projects
         </a>
       </Link>

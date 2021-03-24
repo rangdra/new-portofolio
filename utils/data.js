@@ -19,7 +19,7 @@ export const listProjects = [
   {
     id: "1",
     title: "My Personal Website",
-    subtitle: "Website pribadi saya di buat dengan Next Js and Tailwind CSS.",
+    subtitle: "Website pribadi saya di buat dengan Next Js dan Tailwind CSS.",
     createdAt: "2020",
     linkWeb: "https://rapangestu.vercel.app/",
     linkCode: "https://github.com/rangdra/new-portofolio",
