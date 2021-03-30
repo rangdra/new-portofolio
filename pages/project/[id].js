@@ -109,7 +109,9 @@ const DetailProject = ({ project }) => {
 };
 
 export const getServerSideProps = async ({ params }) => {
-  const res = await fetch(`http://localhost:3000/api/projects/${params.id}`);
+  const res = await fetch(
+    `https://rangdra22.vercel.app/api/projects/${params.id}`
+  );
   const project = await res.json();
 
   return {

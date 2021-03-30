@@ -52,7 +52,7 @@ const Projects = ({ data }) => {
 };
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch("http://localhost:3000/api/projects");
+  const res = await fetch("https://rangdra22.vercel.app/api/projects");
   const data = await res.json();
 
   return {
