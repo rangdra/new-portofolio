@@ -69,9 +69,9 @@ export const listProjects = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     title: "Social App",
-    subtitle: "Website",
+    subtitle: "MERN Graphql & Semantic UI",
     createdAt: "2020",
     linkWeb: "https://rpsocialapp.netlify.app/",
     linkCode: "https://github.com/rangdra/merng-client-socialapp",
@@ -81,9 +81,9 @@ export const listProjects = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     title: "Post App",
-    subtitle: "Website",
+    subtitle: "MERN stack & tailwind css",
     createdAt: "2021",
     linkWeb: "https://postapp22.netlify.app/",
     linkCode: "https://github.com/rangdra/mern-postapp-client",
@@ -96,7 +96,7 @@ export const listProjects = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     title: "Covid19 Tracker",
     subtitle:
       "Website perkembangan covid19 diindonesia dengan dengan data dari API. Website dibuat dengan HTML, CSS ,BOOTSTRAP dengan sedikit sentuhan javascript",
@@ -108,7 +108,7 @@ export const listProjects = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     title: "Movie App",
     subtitle:
       "Website pencarian film dibuat dengan react js dengan data dari API",
@@ -132,7 +132,7 @@ export const listProjects = [
   //   ],
   // },
   {
-    id: "7",
+    id: "8",
     title: "Amazon Clone",
     subtitle:
       "Simple clone dari Amazon. di buat dengan react js dengan authentication firebase",
@@ -146,7 +146,7 @@ export const listProjects = [
     ],
   },
   {
-    id: "8",
+    id: "9",
     title: "Airbnb Clone",
     subtitle: "Simple clone dari Airbnb. di buat dengan react js.",
     createdAt: "2020",
