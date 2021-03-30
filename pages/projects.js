@@ -1,9 +1,8 @@
 import CardProject from "../components/atoms/CardProject";
 import TitlePage from "../components/atoms/TitlePage";
-import { listProjects } from "../utils/data";
 import Layout from "../components/Layout";
 
-const Projects = () => {
+const Projects = ({ data }) => {
   return (
     <Layout title="Projects">
       <TitlePage
@@ -12,7 +11,7 @@ const Projects = () => {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {listProjects?.map((project) => (
+        {data?.map((project) => (
           <CardProject key={project.id} project={project} />
         ))}
       </div>
@@ -50,6 +49,17 @@ const Projects = () => {
       </div>
     </Layout>
   );
+};
+
+export const getServerSideProps = async (context) => {
+  const res = await fetch("http://localhost:3000/api/projects");
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
 };
 
 export default Projects;

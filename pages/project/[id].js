@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { listProjects } from "../../utils/data";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 
-const DetailProject = () => {
+const DetailProject = ({ project }) => {
   const router = useRouter();
-  const { id } = router.query;
-
   const [tab, setTab] = useState(0);
-
-  const project = listProjects.find((i) => i.id === id);
 
   return (
     <Layout title="Detail Project">
@@ -113,4 +108,14 @@ const DetailProject = () => {
   );
 };
 
+export const getServerSideProps = async ({ params }) => {
+  const res = await fetch(`http://localhost:3000/api/projects/${params.id}`);
+  const project = await res.json();
+
+  return {
+    props: {
+      project,
+    },
+  };
+};
 export default DetailProject;
