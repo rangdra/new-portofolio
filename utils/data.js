@@ -23,7 +23,9 @@ export const listProjects = [
     createdAt: "2020",
     linkWeb: "https://rapangestu.vercel.app/",
     linkCode: "https://github.com/rangdra/new-portofolio",
-    images: [],
+    images: [
+      "https://res.cloudinary.com/rangdra/image/upload/v1617126020/img-projects/porto_r8jypd.png",
+    ],
   },
   {
     id: "2",
@@ -67,19 +69,19 @@ export const listProjects = [
     ],
   },
   {
-    id: "5",
+    id: "3",
     title: "Social App",
     subtitle: "Website",
     createdAt: "2020",
     linkWeb: "https://rpsocialapp.netlify.app/",
-    linkCode: "#",
+    linkCode: "https://github.com/rangdra/merng-client-socialapp",
     images: [
       "https://res.cloudinary.com/rangdra/image/upload/v1617125498/img-projects/socialapp_ienhxd.png",
       "https://res.cloudinary.com/rangdra/image/upload/v1617125498/img-projects/socialapp2_een01b.png",
     ],
   },
   {
-    id: "6",
+    id: "4",
     title: "Post App",
     subtitle: "Website",
     createdAt: "2021",
@@ -94,7 +96,7 @@ export const listProjects = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     title: "Covid19 Tracker",
     subtitle:
       "Website perkembangan covid19 diindonesia dengan dengan data dari API. Website dibuat dengan HTML, CSS ,BOOTSTRAP dengan sedikit sentuhan javascript",
@@ -106,7 +108,7 @@ export const listProjects = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     title: "Movie App",
     subtitle:
       "Website pencarian film dibuat dengan react js dengan data dari API",
