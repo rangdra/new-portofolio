@@ -110,7 +110,7 @@ const DetailProject = ({ project }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await fetch(
-    `https://rangdra22.vercel.app/api/projects/${params.id}`
+    `https://rangdrap.vercel.app/api/projects/${params.id}`
   );
   const project = await res.json();
 
