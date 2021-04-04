@@ -7,13 +7,14 @@ module.exports = {
     extend: {
       colors: {
         "true-gray": colors.trueGray,
-        "light-blue": colors.lightBlue,
+        orange: colors.orange,
         lime: colors.lime,
         emerald: colors.emerald,
         cyan: colors.cyan,
         red: colors.red,
         rose: colors.rose,
         teal: colors.teal,
+        blue: colors.blue,
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",

@@ -1,3 +1,4 @@
+import Card from "../components/atoms/Card";
 import CardProject from "../components/atoms/CardProject";
 import TitlePage from "../components/atoms/TitlePage";
 import Layout from "../components/Layout";
@@ -10,10 +11,28 @@ const Projects = ({ data }) => {
         subtitle="Collection of web development and side projects."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {data?.map((project) => (
-          <CardProject key={project.id} project={project} />
-        ))}
+      <div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-6 gap-y-8">
+        <Card
+          image="https://miro.medium.com/max/700/1*vHHBwcUFUaHWXntSnqKdCA.png"
+          title="React Projects"
+          tags={["React"]}
+          icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+          bgIcon="bg-blue-400 hover:bg-gray-50"
+        />
+        <Card
+          image="https://miro.medium.com/max/700/1*htbUdWgFQ3a94PMEvBr_hQ.png"
+          title="Nextjs Projects"
+          tags={["Nextjs"]}
+          icon="https://res.cloudinary.com/rangdra/image/upload/v1617515461/img-projects/nextjs_f8njar.png"
+          bgIcon="bg-gray-200 hover:bg-gray-50"
+        />
+        <Card
+          image="https://www.pngitem.com/pimgs/m/519-5194865_html-css-js-html-5-hd-png-download.png"
+          title="Mini Projects"
+          tags={["HTML", "CSS", "JavaScript"]}
+          icon="https://res.cloudinary.com/rangdra/image/upload/v1617514604/img-projects/icon-html_zglfac.png"
+          bgIcon="bg-gradient-to-r from-blue-400 via-orange-500 to-yellow-400 hover:bg-gradient-to-r from-blue-300 via-orange-400 to-yellow-300"
+        />
       </div>
       <TitlePage
         title="Web Development Skills"

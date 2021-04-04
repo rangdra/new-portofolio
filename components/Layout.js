@@ -13,7 +13,8 @@ const Layout = ({ title, children }) => {
 
       <div className="dark:bg-gray-800">
         <Navbar />
-        <div className="container mx-auto px-5">{children}</div> <Footer />
+        <div className="container mx-auto sm:px-5 px-5">{children}</div>{" "}
+        <Footer />
       </div>
     </ThemeProvider>
   );
