@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div className="mt-0 lg:mt-20 flex justify-between items-center flex-col-reverse lg:flex-row">
-      <h1 className="text-3xl  lg:text-5xl lg:mt-0 mt-6 leading-normal text-gray-800 dark:text-white font-semibold">
+      <h1 className="text-3xl lg:text-4xl lg:mt-0 mt-6 leading-normal text-gray-800 dark:text-white font-semibold">
         Hi, I’m Rangdra, <br />
         <span>
           I’m an experienced web developer with deep interest in modern web

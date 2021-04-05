@@ -3,7 +3,7 @@ import CardProject from "../../components/atoms/CardProject";
 
 const ReactProjects = ({ basic, advance }) => {
   const refProject = useRef();
-  console.log(basic, advance);
+
   function showMostPicked() {
     window.scrollTo({
       top: refProject.current.offsetTop - 30,
@@ -13,10 +13,10 @@ const ReactProjects = ({ basic, advance }) => {
   return (
     <>
       <div
-        className="sm:h-96 h-80  flex justify-center items-center bg-gray-800 flex-col"
+        className="sm:h-96 h-80 flex justify-center items-center bg-gray-800 flex-col"
         // style={{ height: 350 }}
       >
-        <h1 className=" text-5xl font-extrabold text-blue-400 tracking-wider">
+        <h1 className=" text-5xl text-center font-extrabold text-blue-400 tracking-wider">
           React Projects
         </h1>
         <svg

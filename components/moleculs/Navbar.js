@@ -51,7 +51,7 @@ const Navbar = ({ router }) => {
           <li className="sm:mb-0 mb-4 sm:mt-0 mt-12">
             <Link href="/">
               <a
-                className={`hover:opacity-60 hover:underline text-2xl sm:text-lg tracking-wider ${getNavLinkClass(
+                className={`hover:opacity-60 hover:underline text-lg tracking-wider ${getNavLinkClass(
                   "/"
                 )}`}
               >
@@ -62,7 +62,7 @@ const Navbar = ({ router }) => {
           <li className="sm:my-0 my-4">
             <Link href="/projects">
               <a
-                className={`hover:opacity-60 hover:underline text-2xl sm:text-lg tracking-wider mx-4 ${getNavLinkClass(
+                className={`hover:opacity-60 hover:underline text-lg tracking-wider mx-4 ${getNavLinkClass(
                   "/projects"
                 )}`}
               >
@@ -73,7 +73,7 @@ const Navbar = ({ router }) => {
           <li className="sm:my-0 my-4">
             <Link href="/about">
               <a
-                className={`hover:opacity-60 hover:underline text-2xl sm:text-lg tracking-wider ${getNavLinkClass(
+                className={`hover:opacity-60 hover:underline text-lg tracking-wider ${getNavLinkClass(
                   "/about"
                 )}`}
               >
@@ -84,7 +84,7 @@ const Navbar = ({ router }) => {
           {!isMobile && (
             <li className="flex items-center mt-4">
               <Toggle3 />{" "}
-              <span className="ml-4 dark:text-gray-50 text-gray-800 text-xl sm:text-lg">
+              <span className="ml-4 dark:text-gray-50 text-gray-800 text-lg sm:text-lg">
                 Dark mode!
               </span>
             </li>

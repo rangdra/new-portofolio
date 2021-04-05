@@ -1,6 +1,7 @@
 import Card from "../../components/atoms/Card";
 import TitlePage from "../../components/atoms/TitlePage";
 import Layout from "../../components/Layout";
+import dataProjects from "../../utils/dataProjects";
 
 const Projects = () => {
   return (
@@ -10,7 +11,7 @@ const Projects = () => {
         subtitle="Collection of web development and side projects."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-6 gap-y-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-6 gap-y-8 mb-12 sm:mb-0">
         <Card
           image="https://miro.medium.com/max/700/1*vHHBwcUFUaHWXntSnqKdCA.png"
           title="React Projects"
@@ -19,13 +20,22 @@ const Projects = () => {
           bgIcon="bg-blue-400 hover:bg-gray-50"
           linkHref="/projects/react-projects"
         />
-        <Card
+        {/* <Card
           image="https://miro.medium.com/max/700/1*htbUdWgFQ3a94PMEvBr_hQ.png"
           title="Nextjs Projects"
           tags={["Nextjs"]}
           icon="https://res.cloudinary.com/rangdra/image/upload/v1617515461/img-projects/nextjs_f8njar.png"
           bgIcon="bg-gray-200 hover:bg-gray-50"
           linkHref="/projects/nextjs-projects"
+        /> */}
+        <Card
+          image={dataProjects.nextjs_projects[0].image}
+          title={dataProjects.nextjs_projects[0].title}
+          tags={dataProjects.nextjs_projects[0].tags}
+          icon="https://res.cloudinary.com/rangdra/image/upload/v1617515461/img-projects/nextjs_f8njar.png"
+          bgIcon="bg-gray-200 hover:bg-gray-50"
+          linkHref={dataProjects.nextjs_projects[0].linkWeb}
+          linkCode={dataProjects.nextjs_projects[0].linkCode}
         />
         <Card
           image="https://www.pngitem.com/pimgs/m/519-5194865_html-css-js-html-5-hd-png-download.png"

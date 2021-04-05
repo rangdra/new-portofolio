@@ -16,7 +16,7 @@ const NextjsProjects = ({ data }) => {
         className="sm:h-96 h-80  flex justify-center items-center bg-gray-200 flex-col"
         // style={{ height: 350 }}
       >
-        <h1 className=" text-5xl font-extrabold text-gray-600 tracking-wider">
+        <h1 className="text-center text-5xl font-extrabold text-gray-600 tracking-wider">
           Next Js
         </h1>
         <svg

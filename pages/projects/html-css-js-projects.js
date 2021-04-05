@@ -16,7 +16,7 @@ const HtmlCssJsProjects = ({ data }) => {
         className="sm:h-96 h-80  flex justify-center items-center bg-gray-200 flex-col"
         // style={{ height: 350 }}
       >
-        <h1 className=" text-5xl font-extrabold tracking-wider">
+        <h1 className=" text-5xl font-extrabold tracking-wider text-center">
           <span className="text-orange-500">HTML,</span>{" "}
           <span className="text-blue-400">CSS & </span>{" "}
           <span className="text-yellow-300">JS.</span>

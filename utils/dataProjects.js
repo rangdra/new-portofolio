@@ -34,14 +34,7 @@ const dataProjects = {
         linkWeb: "https://belanjalagi.herokuapp.com/",
         image:
           "https://res.cloudinary.com/rangdra/image/upload/v1611581338/img-projects/bl/bl1_ekddzb.png",
-        tags: [
-          "Mongo DB",
-          "Express JS",
-          "Node Js",
-          "React Js",
-          "Redux",
-          "Bootstrap",
-        ],
+        tags: ["MERN", "Redux", "Bootstrap"],
       },
       {
         id: "2",
@@ -49,14 +42,7 @@ const dataProjects = {
         linkWeb: "https://staycation-rp.netlify.app/",
         image:
           "https://res.cloudinary.com/rangdra/image/upload/v1609589659/img-projects/staycation/sc1_b6rvfz.png",
-        tags: [
-          "Mongo DB",
-          "Express JS",
-          "Node Js",
-          "React Js",
-          "SASS",
-          "Bootstrap",
-        ],
+        tags: ["MERN", "SASS", "Bootstrap"],
       },
       {
         id: "3",
@@ -74,6 +60,14 @@ const dataProjects = {
           "https://res.cloudinary.com/rangdra/image/upload/v1617125572/img-projects/postapp/postapp_uvqbhb.png",
 
         tags: ["MERN", "Tailwind"],
+      },
+      {
+        id: "5",
+        title: "Realtime Chat App",
+        linkWeb: "https://rpchatapp.netlify.app/",
+        image:
+          "https://res.cloudinary.com/rangdra/image/upload/v1617644056/img-projects/chattapp_xxo1hu.png",
+        tags: ["React Js", "Socket IO", "Material UI"],
       },
     ],
   },

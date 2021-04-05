@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Router from "next/router";
 
-const Card = ({ image, title, tags, icon, bgIcon, linkHref }) => {
+const Card = ({ image, title, tags, icon, bgIcon, linkHref, linkCode }) => {
   return (
     <div className="w-full shadow-lg transition-all duration-500 transform hover:scale-105 dark:bg-gray-50">
       <div className="relative">
@@ -30,11 +30,24 @@ const Card = ({ image, title, tags, icon, bgIcon, linkHref }) => {
           ))}
         </div>
       </div>
-      <div className="py-4 px-4 bg-cyan-200 text-cyan-500 text-lg text-center">
-        <Link href={linkHref}>
-          <a className="hover:text-cyan-400">View</a>
-        </Link>
-      </div>
+
+      {linkCode ? (
+        <div className="py-4 px-4 bg-cyan-200 text-cyan-500 text-lg flex items-center justify-between">
+          <div className=""></div>
+          <a className="hover:text-cyan-400 hover:underline" href={linkHref}>
+            View
+          </a>
+          <a className="hover:text-cyan-400 hover:underline" href={linkCode}>
+            Code
+          </a>
+        </div>
+      ) : (
+        <div className="py-4 px-4 bg-cyan-200 text-cyan-500 text-lg text-center">
+          <Link href={linkHref}>
+            <a className="hover:text-cyan-400">View</a>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
