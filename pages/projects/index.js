@@ -1,9 +1,8 @@
-import Card from "../components/atoms/Card";
-import CardProject from "../components/atoms/CardProject";
-import TitlePage from "../components/atoms/TitlePage";
-import Layout from "../components/Layout";
+import Card from "../../components/atoms/Card";
+import TitlePage from "../../components/atoms/TitlePage";
+import Layout from "../../components/Layout";
 
-const Projects = ({ data }) => {
+const Projects = () => {
   return (
     <Layout title="Projects">
       <TitlePage
@@ -18,6 +17,7 @@ const Projects = ({ data }) => {
           tags={["React"]}
           icon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
           bgIcon="bg-blue-400 hover:bg-gray-50"
+          linkHref="/projects/react-projects"
         />
         <Card
           image="https://miro.medium.com/max/700/1*htbUdWgFQ3a94PMEvBr_hQ.png"
@@ -25,6 +25,7 @@ const Projects = ({ data }) => {
           tags={["Nextjs"]}
           icon="https://res.cloudinary.com/rangdra/image/upload/v1617515461/img-projects/nextjs_f8njar.png"
           bgIcon="bg-gray-200 hover:bg-gray-50"
+          linkHref="/projects/nextjs-projects"
         />
         <Card
           image="https://www.pngitem.com/pimgs/m/519-5194865_html-css-js-html-5-hd-png-download.png"
@@ -32,6 +33,7 @@ const Projects = ({ data }) => {
           tags={["HTML", "CSS", "JavaScript"]}
           icon="https://res.cloudinary.com/rangdra/image/upload/v1617514604/img-projects/icon-html_zglfac.png"
           bgIcon="bg-gradient-to-r from-blue-400 via-orange-500 to-yellow-400 hover:bg-gradient-to-r from-blue-300 via-orange-400 to-yellow-300"
+          linkHref="/projects/html-css-js-projects"
         />
       </div>
       <TitlePage
@@ -68,17 +70,6 @@ const Projects = ({ data }) => {
       </div>
     </Layout>
   );
-};
-
-export const getServerSideProps = async (context) => {
-  const res = await fetch("https://rangdrap.vercel.app/api/projects");
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
 };
 
 export default Projects;

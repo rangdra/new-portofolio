@@ -1,30 +1,45 @@
-import Link from "next/link";
+import React from "react";
 
-const CardProject = ({ project }) => {
+const Cardproject = ({ image, title, tags, linkWeb }) => {
   return (
-    <div className="card  bg-gray-100 dark:bg-gray-900 py-5 px-6 rounded-lg relative">
-      <span className="flex h-3 w-3 absolute -top-1 -right-1">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-400 dark:bg-gray-200 opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-gray-500 dark:bg-white"></span>
-      </span>
-      <div className="flex justify-between items-center w-full">
-        <h1 className="text-gray-800 dark:text-white text-3xl font-semibold">
-          {project.title}
-        </h1>
-        <p className="text-gray-500 font-medium dark:text-gray-400">
-          {project.createdAt}
-        </p>
+    <div className="w-full shadow-lg transition-all duration-500 transform hover:scale-105">
+      <div className="relative">
+        <img src={image} alt="" className="h-48 w-full object-cover" />
+        <div className="absolute left-1/2 -bottom-10">
+          <a href={linkWeb} target="_blenk" rel="noopener noreferrer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className={`relative p-2 -left-1/2 h-20 w-20  border-8 border-white rounded-full cursor-pointer transition-all duration-900 bg-gray-300 hover:bg-gray-500 text-gray-500 hover:text-gray-100`}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-      <p className="text-card text-gray-500 w-3/4 text-lg dark:text-gray-400 mb-6">
-        {project.subtitle}
-      </p>
-      <Link href={`/project/${project.id}`}>
-        <a className="px-4 py-2 transition-all duration-200 bg-gray-700 dark:bg-cyan-600 text-white hover:bg-cyan-600 dark:hover:bg-gray-700 rounded ">
-          Detail
-        </a>
-      </Link>
+
+      <div className="flex justify-center items-center flex-col mt-12 mb-8 sm:p-0 p-4">
+        <h1 className="text-2xl tracking-wider text-gray-600 mb-4">{title}</h1>
+        <div className="flex items-center flex-wrap justify-center">
+          {tags.map((tag, idx) => (
+            <div
+              key={idx}
+              className="py-1 px-2 mr-2 mb-2 font-light rounded bg-gray-300 text-gray-600"
+            >
+              {tag}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default CardProject;
+export default Cardproject;

@@ -1,4 +1,4 @@
-import { listProjects } from "../../../utils/data";
+import dataProjects from "../../../utils/dataProjects";
 
 export default async (req, res) => {
   switch (req.method) {
@@ -12,5 +12,5 @@ export default async (req, res) => {
 };
 
 const getProjects = (req, res) => {
-  res.json(listProjects);
+  res.json(dataProjects);
 };
