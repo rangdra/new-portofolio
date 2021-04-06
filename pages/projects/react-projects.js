@@ -76,7 +76,7 @@ const ReactProjects = ({ basic, advance }) => {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch("http://localhost:3000/api/projects");
+  const res = await fetch("https://rangdrap.vercel.app/api/projects");
   const {
     react_projects: { basic, advance },
   } = await res.json();

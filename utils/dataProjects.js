@@ -93,6 +93,30 @@ const dataProjects = {
         "https://res.cloudinary.com/rangdra/image/upload/v1609568968/img-projects/c19track_l8bxh5.png",
       tags: ["HTML", "CSS", "Bootstrap"],
     },
+    {
+      id: "2",
+      title: "Landing page StayCation",
+      linkWeb: "https://landingpage-staycation.netlify.app/",
+      image:
+        "https://res.cloudinary.com/rangdra/image/upload/v1617695725/img-projects/staycation_fosuvz.png",
+      tags: ["HTML", "CSS", "SASS", "AOS"],
+    },
+    {
+      id: "3",
+      title: "Landing page Food Recipes",
+      linkWeb: "https://landingpage-foodrecipes.netlify.app/",
+      image:
+        "https://res.cloudinary.com/rangdra/image/upload/v1617710435/img-projects/food_ynwucd.png",
+      tags: ["HTML", "CSS", "Bootstrap", "AOS"],
+    },
+    {
+      id: "4",
+      title: "Navbar Responsive",
+      linkWeb: "https://navbar-responsive22.netlify.app/",
+      image:
+        "https://res.cloudinary.com/rangdra/image/upload/v1617709932/img-projects/navbar_ldtgeh.png",
+      tags: ["HTML", "CSS", "JS"],
+    },
   ],
 };
 

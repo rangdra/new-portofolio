@@ -62,7 +62,7 @@ const HtmlCssJsProjects = ({ data }) => {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch("http://localhost:3000/api/projects");
+  const res = await fetch("https://rangdrap.vercel.app/api/projects");
   const { html_css_projects } = await res.json();
 
   return {
