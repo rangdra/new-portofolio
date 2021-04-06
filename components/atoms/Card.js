@@ -4,7 +4,7 @@ import Router from "next/router";
 
 const Card = ({ image, title, tags, icon, bgIcon, linkHref, linkCode }) => {
   return (
-    <div className="w-full shadow-lg transition-all duration-500 transform hover:scale-105 dark:bg-gray-50">
+    <div className="shadow-lg w-full transition-all duration-500 transform hover:scale-105 dark:bg-gray-50 ">
       <div className="relative">
         <img src={image} alt="" className="h-48 w-full object-cover" />
         <div className="absolute left-1/2 -bottom-10">

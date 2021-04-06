@@ -26,7 +26,9 @@ const Cardproject = ({ image, title, tags, linkWeb }) => {
       </div>
 
       <div className="flex justify-center items-center flex-col mt-12 mb-8 sm:p-0 p-4">
-        <h1 className="text-2xl tracking-wider text-gray-600 mb-4">{title}</h1>
+        <h1 className="text-xl tracking-wider text-gray-600 mb-4 text-center px-2">
+          {title}
+        </h1>
         <div className="flex items-center flex-wrap justify-center">
           {tags.map((tag, idx) => (
             <div
