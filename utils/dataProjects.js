@@ -15,7 +15,7 @@ const dataProjects = {
         linkWeb: "https://clone-bde84.web.app/",
         image:
           "https://res.cloudinary.com/rangdra/image/upload/v1609590485/img-projects/amclone/ac1_ohwaxy.png",
-        tags: ["React JS", "Firebase"],
+        tags: ["React JS", "Firebase Auth"],
       },
       {
         id: "3",
@@ -23,6 +23,14 @@ const dataProjects = {
         linkWeb: "https://airbnb-clone-70faf.web.app/",
         image:
           "https://res.cloudinary.com/rangdra/image/upload/v1609590808/img-projects/bnbclone/bnb1_wcltmh.png",
+        tags: ["React JS"],
+      },
+      {
+        id: "4",
+        title: "Recipe App",
+        linkWeb: "https://rp-recipe-app.netlify.app/",
+        image:
+          "https://res.cloudinary.com/rangdra/image/upload/v1617728871/img-projects/recipe_rokvds.png",
         tags: ["React JS"],
       },
     ],
