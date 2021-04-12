@@ -7,10 +7,15 @@ const ProjectItem = () => {
         Projects
       </h2>
 
-      <div className="w-full mb-8 cursor-pointer pt-2 pl-2 transition-all duration-200">
+      <div className="w-full mb-8 cursor-pointer pt-2  transition-all duration-200">
         <Link href="/projects/react-projects">
           <a className="text-gray-800 font-semibold text-xl mb-4 border-b border-gray-400 block pb-3 transition-all duration-200 hover:border-cyan-400 hover:text-cyan-400 dark:text-white dark:hover:text-cyan-400">
             React Projects
+          </a>
+        </Link>
+        <Link href="/projects/nextjs-projects">
+          <a className="text-gray-800 font-semibold text-xl mb-4 border-b border-gray-400 block pb-3 transition-all duration-200 hover:border-cyan-400 hover:text-cyan-400 dark:text-white dark:hover:text-cyan-400">
+            Nextjs Projects
           </a>
         </Link>
         <Link href="/projects/html-css-js-projects">

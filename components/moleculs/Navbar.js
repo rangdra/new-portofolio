@@ -10,7 +10,7 @@ const Navbar = ({ router }) => {
 
   const getNavLinkClass = (link) => {
     if (link === path) {
-      return "text-cyan-500 underline dark:text-cyan-500";
+      return "text-cyan-500 dark:text-cyan-500";
     }
     return " text-gray-800 dark:text-gray-50";
   };

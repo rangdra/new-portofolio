@@ -6,7 +6,7 @@ const Cardproject = ({ image, title, tags, linkWeb }) => {
       <div className="relative">
         <img src={image} alt="" className="h-48 w-full object-cover" />
         <div className="absolute left-1/2 -bottom-10">
-          <a href={linkWeb} target="_blenk" rel="noopener noreferrer">
+          <a href={linkWeb} target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

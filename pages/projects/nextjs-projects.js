@@ -17,7 +17,7 @@ const NextjsProjects = ({ data }) => {
         // style={{ height: 350 }}
       >
         <h1 className="text-center text-5xl font-extrabold text-gray-600 tracking-wider">
-          Next Js
+          Next Projects
         </h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
