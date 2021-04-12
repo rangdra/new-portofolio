@@ -90,6 +90,15 @@ const dataProjects = {
         "https://res.cloudinary.com/rangdra/image/upload/v1617126020/img-projects/porto_r8jypd.png",
       tags: ["Naxt JS", "Tailwind"],
     },
+    {
+      id: "2",
+      title: "Nextjs google clone",
+      linkWeb: "https://next-google-clone.vercel.app/",
+      linkCode: "https://github.com/rangdra/next-google-clone",
+      image:
+        "https://res.cloudinary.com/rangdra/image/upload/v1618228516/img-projects/next-google_gho7h1.png",
+      tags: ["Naxt JS", "Tailwind"],
+    },
   ],
 
   html_css_projects: [
