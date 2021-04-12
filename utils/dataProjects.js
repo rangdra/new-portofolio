@@ -88,7 +88,7 @@ const dataProjects = {
       linkCode: "https://github.com/rangdra/new-portofolio",
       image:
         "https://res.cloudinary.com/rangdra/image/upload/v1617126020/img-projects/porto_r8jypd.png",
-      tags: ["Naxt JS", "Tailwind"],
+      tags: ["Next js", "Tailwind"],
     },
     {
       id: "2",
@@ -97,7 +97,7 @@ const dataProjects = {
       linkCode: "https://github.com/rangdra/next-google-clone",
       image:
         "https://res.cloudinary.com/rangdra/image/upload/v1618228516/img-projects/next-google_gho7h1.png",
-      tags: ["Naxt JS", "Tailwind"],
+      tags: ["Next js", "Tailwind"],
     },
   ],
 
