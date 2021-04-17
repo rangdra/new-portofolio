@@ -88,3 +88,7 @@ input:checked ~ .toggle_3_dot {
   box-shadow: 0 20px 25px -5px rgba(255, 255, 255, 0.75),
     0 10px 10px -5px rgba(255, 255, 255, 0.75);
 }
+
+.swiper-slide {
+  height: 400px !important;
+}

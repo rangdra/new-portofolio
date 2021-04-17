@@ -1,5 +1,6 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
+import "swiper/swiper-bundle.css";
 
 import Router from "next/router";
 import NProgress from "nprogress";
@@ -11,7 +12,7 @@ Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;

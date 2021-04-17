@@ -2,7 +2,7 @@ import React from "react";
 
 const Cardproject = ({ image, title, tags, linkWeb }) => {
   return (
-    <div className="w-full shadow-lg transition-all duration-500 transform hover:scale-105">
+    <div className="w-full shadow-lg z-50 transition-all duration-500 transform hover:scale-105">
       <div className="relative">
         <img src={image} alt="" className="h-48 w-full object-cover" />
         <div className="absolute left-1/2 -bottom-10">
@@ -25,7 +25,7 @@ const Cardproject = ({ image, title, tags, linkWeb }) => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center flex-col mt-12 mb-8 sm:p-0 p-4">
+      <div className="flex justify-center items-center flex-col mt-12 sm:p-0 p-4">
         <h1 className="text-xl tracking-wider text-gray-600 mb-4 text-center px-2">
           {title}
         </h1>
@@ -33,7 +33,7 @@ const Cardproject = ({ image, title, tags, linkWeb }) => {
           {tags.map((tag, idx) => (
             <div
               key={idx}
-              className="py-1 px-2 mr-2 mb-2 font-light rounded bg-gray-300 text-gray-600"
+              className="py-1 px-2 mr-2 mb-8 font-light rounded bg-gray-300 text-gray-600"
             >
               {tag}
             </div>
