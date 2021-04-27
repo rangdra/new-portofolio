@@ -88,7 +88,7 @@ const dataProjects = {
       linkCode: "https://github.com/rangdra/new-portofolio",
       image:
         "https://res.cloudinary.com/rangdra/image/upload/v1617126020/img-projects/porto_r8jypd.png",
-      tags: ["Next js", "Tailwind"],
+      tags: ["Nextjs", "Tailwind"],
     },
     {
       id: "2",
@@ -97,7 +97,16 @@ const dataProjects = {
       linkCode: "https://github.com/rangdra/next-google-clone",
       image:
         "https://res.cloudinary.com/rangdra/image/upload/v1618228516/img-projects/next-google_gho7h1.png",
-      tags: ["Next js", "Tailwind"],
+      tags: ["Nextjs", "Tailwind"],
+    },
+    {
+      id: "3",
+      title: "Movies app",
+      linkWeb: "https://movies-app-nextjs.vercel.app/",
+      linkCode: "https://github.com/rangdra/movies-nextjs",
+      image:
+        "https://res.cloudinary.com/rangdra/image/upload/v1619567782/img-projects/movies_fl4j47.png",
+      tags: ["Nextjs", "Tailwind"],
     },
   ],
 
