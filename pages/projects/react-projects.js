@@ -3,13 +3,13 @@ import CardProject from "../../components/atoms/CardProject";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const ReactProjects = ({ basic, advance }) => {
   const refProject = useRef();
   const router = useRouter();
-  console.log(router);
   const [isMobile, setIsMobile] = useState(false);
 
   function showMostPicked() {
@@ -35,6 +35,9 @@ const ReactProjects = ({ basic, advance }) => {
   }
   return (
     <>
+      <Head>
+        <title>React js Projects</title>
+      </Head>
       <div
         className="group flex items-center absolute top-4 left-4 cursor-pointer"
         onClick={() => router.back()}
@@ -61,7 +64,7 @@ const ReactProjects = ({ basic, advance }) => {
         className="sm:h-96 h-80 flex justify-center items-center bg-gray-800 flex-col"
         // style={{ height: 350 }}
       >
-        <h1 className=" text-5xl text-center font-extrabold text-blue-400 tracking-wider">
+        <h1 className="sm:text-5xl text-3xl text-center font-extrabold text-blue-400 tracking-wider">
           React Projects
         </h1>
         <svg
@@ -70,7 +73,7 @@ const ReactProjects = ({ basic, advance }) => {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="text-blue-400 h-20 w-20 mt-8 animate-bounce cursor-pointer hover:text-blue-300"
+          className="text-blue-400 h-16 w-16 sm:h-20 sm:w-20 sm:mt-8 mt-4 animate-bounce cursor-pointer hover:text-blue-300"
           onClick={showMostPicked}
         >
           <path
@@ -130,39 +133,7 @@ const ReactProjects = ({ basic, advance }) => {
         <h1 className="text-center text-4xl text-gray-800 font-semibold tracking-wide">
           Advance Projects
         </h1>
-        {/* <div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-6 gap-y-8 my-12">
-          {advance.map((item) => (
-            <CardProject
-              key={item?.id}
-              image={item?.image}
-              title={item?.title}
-              tags={item?.tags}
-              linkWeb={item?.linkWeb}
-            />
-          ))}
-        </div> */}
         <div className="my-12">
-          {/* <Swiper
-            spaceBetween={50}
-            slidesPerView={3}
-            navigation
-            pagination
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            {advance.map((item) => (
-              <SwiperSlide>
-                <CardProject
-                  key={item?.id}
-                  image={item?.image}
-                  title={item?.title}
-                  tags={item?.tags}
-                  linkWeb={item?.linkWeb}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
-
           {isMobile ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-6 gap-y-8 mt-12">
               {basic.map((item) => (
@@ -204,7 +175,7 @@ const ReactProjects = ({ basic, advance }) => {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch("https://rangdrap.vercel.app/api/projects");
+  const res = await fetch(`${process.env.BASE_URL_API}/projects`);
   const {
     react_projects: { basic, advance },
   } = await res.json();

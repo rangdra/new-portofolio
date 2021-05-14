@@ -3,6 +3,7 @@ import CardProject from "../../components/atoms/CardProject";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -35,6 +36,9 @@ const NextjsProjects = ({ data }) => {
   }
   return (
     <>
+      <Head>
+        <title>Next js Projects</title>
+      </Head>
       <div
         className="group flex items-center absolute top-4 left-4 cursor-pointer"
         onClick={() => router.back()}
@@ -61,7 +65,7 @@ const NextjsProjects = ({ data }) => {
         className="sm:h-96 h-80  flex justify-center items-center bg-gray-200 flex-col"
         // style={{ height: 350 }}
       >
-        <h1 className="text-center text-5xl font-extrabold text-gray-800 tracking-wider">
+        <h1 className="text-center sm:text-5xl text-3xl font-extrabold text-gray-800 tracking-wider">
           Next Projects
         </h1>
         <svg
@@ -70,7 +74,7 @@ const NextjsProjects = ({ data }) => {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="text-gray-800 h-20 w-20 mt-8 animate-bounce cursor-pointer hover:text-gray-400"
+          className="text-gray-800 h-16 w-16 sm:h-20 sm:w-20 sm:mt-8 mt-4 animate-bounce cursor-pointer hover:text-gray-400"
           onClick={showMostPicked}
         >
           <path
@@ -124,24 +128,13 @@ const NextjsProjects = ({ data }) => {
             </Swiper>
           )}
         </div>
-        {/* <div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-6 gap-y-8 my-12">
-          {data.map((item) => (
-            <CardProject
-              key={item?.id}
-              image={item?.image}
-              title={item?.title}
-              tags={item?.tags}
-              linkWeb={item?.linkWeb}
-            />
-          ))}
-        </div> */}
       </section>
     </>
   );
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch("https://rangdrap.vercel.app/api/projects");
+  const res = await fetch(`${process.env.BASE_URL_API}/projects`);
   const { nextjs_projects } = await res.json();
 
   return {

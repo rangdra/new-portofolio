@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="icon.png" />
+          <link rel="icon" href="logo.png" />
         </Head>
         <body className="antialiased">
           <Main />
