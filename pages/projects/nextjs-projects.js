@@ -134,7 +134,7 @@ const NextjsProjects = ({ data }) => {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`${process.env.BASE_URL_API}/projects`);
+  const res = await fetch(`https://rapangestu.vercel.app/api/projects`);
   const { nextjs_projects } = await res.json();
 
   return {
